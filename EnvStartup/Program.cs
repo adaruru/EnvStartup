@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+﻿using Newtonsoft.Json;
 
 namespace EnvStartup;
 internal class Program
@@ -16,16 +16,11 @@ internal class Program
             return;
         }
 
-        if (File.Exists(configPath))
-        {
-            //todo: read file and execute
-        }
-        else
+        if (!File.Exists(configPath))
         {
             //todo: create file and set default value
-            File.Create(configPath);
             var env = new EnvConfig(dir);
-            var json = JsonSerializer.Serialize(env);
+            var json = JsonConvert.SerializeObject(env, Formatting.Indented);
             File.WriteAllText(configPath, json);
         }
     }

@@ -1,8 +1,0 @@
-﻿{
-  // ProjectInfoDirectory used to be Info
-  "ProjectInfoDirectory": "Info",
-  // ProjectLogDirectory used to be Log
-  "ProjectLogDirectory": "Log",
-  // ServerEnvironment can be prod, dev, stg, uat
-  "ServerEnvironment": "prod"
-}

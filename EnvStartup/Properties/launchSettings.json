@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "EnvStartup": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Git\\github\\EnvStartup"
+    },
+    "EnvStartupWithRoot": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Git\\github\\EnvStartup D:\\"
+    }
+  }
+}
