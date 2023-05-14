@@ -1,10 +1,12 @@
 ﻿{
+  // ServerEnvironment can be production, development, staging
+  "ServerEnvironment": "production",
   // Complied code path
   "ProjectDirectory": "D:\\Git\\github\\EnvStartup",
   // For ExcelTemplate, ReportFiles, used to be D:\\{ProjectName}Info
   "ProjectInfoDirectory": "D:\\EnvStartupInfo",
   // For Logs, used to be D:\\{ProjectName}Log
   "ProjectLogDirectory": "D:\\EnvStartupLog",
-  // ServerEnvironment can be production, development, staging
-  "ServerEnvironment": "production"
+  // IIS App run as "NETWORK SERVICE", "App Pool Identity"
+  "AppUser": "NetworkService"
 }

@@ -5,13 +5,15 @@ public class EnvConfig
     public EnvConfig(string dir)
     {
         var root = "D:\\";
-        var projectName = $@"{dir.Split("\\").Last()}";
+        ProjectName = $@"{dir.Split("\\").Last()}";
         ProjectDirectory = dir;
-        ProjectInfoDirectory = $"{root}{projectName}Info";
-        ProjectLogDirectory = $"{root}{projectName}Log";
+        ProjectInfoDirectory = $"{root}{ProjectName}Info";
+        ProjectLogDirectory = $"{root}{ProjectName}Log";
     }
+    public string ProjectName { get; set; }
     public string ServerEnvironment { get; set; } = "prodction";
     public string ProjectDirectory { get; set; }
     public string ProjectInfoDirectory { get; set; }
     public string ProjectLogDirectory { get; set; }
+    public string AppUser { get; set; }
 }
